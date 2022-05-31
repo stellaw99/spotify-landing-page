@@ -1,0 +1,111 @@
+.join-main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.join-text {
+    font-size: 4rem;
+}
+
+.accent-text {
+    color: deeppink;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(33, 121, 209);
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(62, 131, 176);
+}
+
+.join-form {
+    background-color: #202027;
+    width: 50vw;
+    max-width: 50%;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group label {
+    margin-bottom: .5rem;
+}
+.input-group input {
+    outline: none;
+    background: none;
+    border: solid 1px #2e3852;
+    font-size: 1em;
+    padding: .5em;
+    border-radius: 5px;
+    color: inherit;
+}
+
+.input-group input:focus {
+    border-color: #596da0;
+}
+
+@media (max-width: 900px) {
+    .join-main-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .join-form {
+        width: 80vw;
+        max-width: inherit;
+        margin: 2rem 0;
+    }
+}
+
+.join-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 127, 0.097);
+    bottom: -5vw;
+    left: -5vw;
+    z-index: -1;
+}
+
+.join-page-circle-2 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(71, 107, 199, 0.107);
+    top: 10vw;
+    left: 30vw;
+    z-index: -1;
+}
+
+.join-page-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 127, 0.097);
+    bottom: -15vw;
+    right: -15vw;
+    z-index: -1;
+}

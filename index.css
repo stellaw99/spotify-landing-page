@@ -53,8 +53,8 @@
 
 .home-page-circle-2 {
     position: absolute;
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
     background-color: rgba(52, 87, 178, 0.167);
     top: 10vw;
@@ -67,19 +67,19 @@
     overflow: hidden;
     width: 45vw;
     height: 45vw;
-    border-radius: 50%;
-    background-color: rgba(52, 87, 178, 0.167);
-    bottom: -15vw;
-    right: -15vw;
+    bottom: 0;
+    right: 0;
     z-index: -1;
 }
+/* border radius was taken off circle-3 parent, but reflects in the pseudo el.
+then overflow in parent, but transform/translate in child el will hide rest of circle */
 
-/* .home-page-circle-3::before {
+.home-page-circle-3::before {
     content: '';
-    transform: translate(40% 40%);
+    transform: translate(40%, 40%);
     position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
     background-color: rgba(52, 87, 178, 0.167);
-} */
+}

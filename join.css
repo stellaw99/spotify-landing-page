@@ -26,7 +26,7 @@
 }
 
 .btn:hover {
-    background-color: rgb(62, 131, 176);
+    background-color: rgb(0, 153, 255);
 }
 
 .join-form {
@@ -78,12 +78,21 @@
 
 .join-page-circle-1 {
     position: absolute;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.join-page-circle-1::before {
+    content: '';
+    transform: translate(-15%, 10%);
+    position: absolute;
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
     background-color: rgba(188, 58, 127, 0.097);
-    bottom: -5vw;
-    left: -5vw;
     z-index: -1;
 }
 
@@ -103,9 +112,16 @@
     overflow: hidden;
     width: 45vw;
     height: 45vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.join-page-circle-3::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     background-color: rgba(188, 58, 127, 0.097);
-    bottom: -15vw;
-    right: -15vw;
-    z-index: -1;
 }

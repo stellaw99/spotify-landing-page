@@ -31,6 +31,9 @@
     align-self: center;
 }
 
+.music {
+    color: deeppink;
+}
 @media (max-width: 900px) {
     .home-main-section .img-wrapper {
         display: none;

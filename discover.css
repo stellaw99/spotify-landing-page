@@ -10,6 +10,14 @@
     flex-grow: 1;
 }
 
+h1 {
+    line-height: 1em;
+}
+
+.music-txt {
+    color: deeppink;
+}
+
 .discover-main-section {
     display: flex;
     align-items: center;
